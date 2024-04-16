@@ -1,0 +1,6 @@
+.cart-widget span{
+    background-color: white;
+    color: var(--main-color);
+    border-radius: 2px;
+    padding: 5px;
+}
