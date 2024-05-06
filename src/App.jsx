@@ -1,19 +1,27 @@
 
 import './App.css'
-import Brand from './components/Brand/Brand';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import NavBar from './components/NavBar/NavBar';
+import Layout from './components/Layout/Layout';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 function App() {
-  return(
-    <div>
-      <div className='header'>
-        <Brand />
-        <NavBar />
-      </div>
-      <ItemListContainer greeting="Bienvenido/a a INTEGRALOG!" />
-    </div>
-  ) 
+  return (
+    <BrowserRouter>
+      <Layout>
+
+        <Routes>
+          <Route path="/" element={<ItemListContainer greeting="Bienvenido/a a INTEGRALOG!!"/>} />
+          <Route path="/item/:id" element={<ItemDetailContainer />}/>
+          <Route path="/category/:categoria" element={<ItemListContainer greeting="Servicios"/>}/>
+          <Route path="*" element={<h1>Página No Encontrada</h1>} />
+        </Routes>
+
+      </Layout>
+
+    </BrowserRouter>
+  )
 }
 
 export default App;

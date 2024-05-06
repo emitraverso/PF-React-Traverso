@@ -1,0 +1,23 @@
+.layout{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header{
+    position: sticky;
+    top: 0;  
+    background-color: var(--main-color);
+    padding: 10px;
+    z-index: 1; 
+  
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main{
+    min-height: calc(100vh - 147px);
+}
+
+  

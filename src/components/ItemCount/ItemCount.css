@@ -1,0 +1,11 @@
+.contador-btn{
+    border: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.numero{
+    color: white;
+    
+}

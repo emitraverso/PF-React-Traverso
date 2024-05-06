@@ -3,3 +3,9 @@
     padding: 10px;
      font-size: 25px;
   }
+
+  .cargando{
+    color: var(--main-color);
+    padding: 10px;
+     font-size: 25px;
+  }

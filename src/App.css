@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; 
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -22,19 +31,11 @@ a{
   --color-transp: rgba(255, 255, 255, 0.839);
 }
 
-/*!--------HEADER------- }*/
-
-.header{
-  position: sticky;
-  top: 0;  
-  background-color: var(--main-color);
-  padding: 10px;
-  z-index: 1; 
-
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
+.titulo{
+  font-size:22px; 
+  background-color: #9bbec872;
+  color: white;
+  font-weight: lighter;
 }
-
 
     

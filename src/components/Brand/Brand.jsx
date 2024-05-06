@@ -1,8 +1,10 @@
 import './Brand.css'
+import {NavLink} from 'react-router-dom'
 
 function Brand(){
     return(
-        <img src="../img/logo-blue.png" alt="img logo" />
+        <NavLink to={'/'}><img src="../img/logo-blue.png" alt="img logo" /></NavLink>
+        
     ); 
   }
 
