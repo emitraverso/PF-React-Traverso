@@ -1,15 +1,17 @@
-import CartIcon from "../CartIcon/CartIcon.jsx";
-import {useState} from "react";
+import CartIcon from "../CartIcon/CartIcon.jsx"
 import './CartWidget.css'
+import { Link } from 'react-router-dom';
 
-function CartWidget(){
-    const [cartItems,setCartItems] = useState(2);
-        return(
+function CartWidget({ numero }) {
+
+    return (
+        <Link to={`/carrito`}>
             <div className="cart-widget">
-                <CartIcon ancho={35} alto={35}/>
-                <a href=""><span>{cartItems}</span></a>
+                <CartIcon ancho={35} alto={35} />
+                <a href=""><span>{numero}</span></a>
             </div>
-        ); 
+        </Link>
+    );
 }
-    
+
 export default CartWidget;

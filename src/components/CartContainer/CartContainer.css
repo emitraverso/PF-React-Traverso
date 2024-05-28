@@ -1,0 +1,91 @@
+.carrito{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/op-logisticos.jpg);
+    min-height: calc(100vh - 170px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px 0px 0px;
+    padding: 10px 10px 20px;
+}
+
+.titulo{
+    color: var(--main-color);
+    padding: 10px;
+     font-size: 25px;
+     background-color: var(--fourth-color);
+  }
+
+.carrito-servicios{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.mensaje{
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.servicio-total{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    color: var(--main-color);
+}
+
+.carrito-precio{
+    display: flex;
+    color: white;
+    gap: 10px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.826);
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    margin: 10px;
+    font-size: 18px;
+}
+
+.limpiar{
+    border: 0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    background-color: var(--main-color);
+    border: 2px solid rgba(255, 255, 255, 0.826);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.limpiar:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+}
+
+.contratar{
+    border: 0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    background-color: var(--second-color);
+    border: 2px solid rgba(255, 255, 255, 0.826);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.contratar:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+}
+
+.hidden{
+    display: none;
+}

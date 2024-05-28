@@ -1,6 +1,6 @@
 import './ItemListContainer.css'
 import ItemList from '../Item/ItemList';
-import useServicios from '../Hooks/useServicios';
+import useServicios from '../../Hooks/useServicios';
 import { useParams } from 'react-router-dom';
 
 export default function ItemListContainer({ greeting }) {

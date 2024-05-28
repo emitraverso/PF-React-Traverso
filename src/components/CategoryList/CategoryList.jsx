@@ -1,6 +1,7 @@
 import './CategoryList.css'
 import {NavLink} from 'react-router-dom'
 
+
 function CategoryList(){
     return(
         <nav>

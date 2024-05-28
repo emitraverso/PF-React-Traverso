@@ -1,8 +1,9 @@
-# React + Vite
+# Integralog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##### Este proyecto tiene el objetivo de ofrecer servicios de asesoría logística que se pueden ir agregando a un "carrito", del que  luego va a calcular el total a pagar por lo que se ha decidido contratar, de acuerdo al plazo de contratación elegido (admite 1 a 12 meses). 
 
-Currently, two official plugins are available:
+##### Pasos para levantar el proyecto:
+1. ##### Ejecutar npm i para instalar las dependencias
+2. ##### Ejecutar npm run dev para levantar la aplicación en modo desarrollo 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+

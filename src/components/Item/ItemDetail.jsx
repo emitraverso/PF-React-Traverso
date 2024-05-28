@@ -1,9 +1,17 @@
-import useContador from '../Hooks/useContador';
+import { useContext } from 'react';
+import useContador from '../../Hooks/useContador';
 import ItemCount from '../ItemCount/ItemCount'
 import './Item.css'
+import CartContext from '../../contexts/CartContext';
 
-export default function Item({ item }) {
-    const { cantidad, sumar, restar } = useContador(0);
+export default function ItemDetail({ item }) {
+    const { cantidad, sumar, restar, resetear } = useContador(0);
+    const { agregarAlCarrito} = useContext(CartContext);
+
+    const handleAgregar = () => {
+        agregarAlCarrito(item,cantidad);
+        resetear();
+    }
 
     return (
 
@@ -24,7 +32,7 @@ export default function Item({ item }) {
                     <ItemCount maximo={item.stock} cantidad={cantidad} sumar={sumar} restar={restar} />
                 </div>
                 <div className='agregar-container'>
-                    <button className='agregar-btn' onClick={() => onAdd(item, contador)}>
+                    <button className='agregar-btn' onClick={handleAgregar} disabled={cantidad == 0}>
                         Agregar
                     </button>
                 </div>
